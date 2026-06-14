@@ -20,28 +20,43 @@ layerTabs.forEach((tab) => {
 const stageCopy = {
   customer: {
     title: "Customer service",
-    body: "Order received, personalization checked, and any issue flagged before production starts.",
+    body: "Order received, personalization checked, and ambiguous notes, files, colors, or deadlines flagged before production starts.",
     phone: "Your personalization has been checked and the production file is being prepared."
+  },
+  proof: {
+    title: "Proof / render",
+    body: "High-risk custom orders can show a proof or render before production. Normal orders can move forward automatically.",
+    phone: "Your order has a production-ready render. We are checking the details before making it."
   },
   production: {
     title: "Production",
-    body: "Artwork, engraving, printing, or cut files are prepared and routed to the right production step.",
+    body: "Artwork, engraving, printing, cut files, LED parts, or assembly instructions are routed to the right production step.",
     phone: "Your custom artwork is in production and moving through the shop."
+  },
+  qc: {
+    title: "Quality check",
+    body: "The finished product is checked for scratches, chips, cracks, print quality, spelling, orientation, and LED function where applicable.",
+    phone: "Your nameplate has been made and is being checked before it is packed."
   },
   packaging: {
     title: "Packaging",
-    body: "The finished product is inspected, protected, packed, and prepared for carrier handoff.",
+    body: "The product is protected, packed, matched to the order, and prepared for carrier handoff.",
     phone: "Your finished nameplate is being inspected and packed."
   },
-  shipping: {
-    title: "Shipping",
-    body: "The package is staged for pickup or handoff. The carrier scan is the next external signal.",
-    phone: "Your package is ready for shipping handoff."
+  label: {
+    title: "Label created",
+    body: "A label exists, the package is staged, and the customer has progress visibility before the first external scan.",
+    phone: "Your shipping label has been created and your package is waiting for pickup."
   },
-  carrier: {
-    title: "Carrier tracking",
-    body: "UPS, FedEx, USPS, or marketplace tracking takes over after the package has been scanned.",
-    phone: "Carrier tracking is now available for this order."
+  transit: {
+    title: "In transit",
+    body: "Carrier scans can be translated into simple events: pickup, origin facility, regional hub, destination facility, and out for delivery.",
+    phone: "Your package is moving through the carrier network."
+  },
+  delivered: {
+    title: "Delivered",
+    body: "The experience can close with care instructions, review timing, and a managed support path if something went wrong.",
+    phone: "Delivered. Your custom nameplate should now be at the destination address."
   }
 };
 
