@@ -1,0 +1,47 @@
+{
+  "endpoint": "https://api.openai.com/v1/images/edits",
+  "payload": {
+    "model": "gpt-image-2",
+    "prompt": "Edit the reference wedding morning gift set product photo. Preserve the same square crop and scene: cream vanity table, blush florals, gold vanity mirror, champagne ribbon, gift box, gift note, and soft luxury wedding-morning light. Change only the personalized products from wood to mirror/glass: the large arched Avery piece, smaller Bridesmaid piece, and square foreground stack should look like reflective glass or mirror keepsakes with polished clear edges and gold script/floral details. Remove wood grain and plywood/tan wood from the product pieces. Photorealistic premium product photography. No logos, no watermark, no extra people.",
+    "n": "1",
+    "size": "1024x1024",
+    "quality": "medium",
+    "output_format": "jpeg",
+    "output_compression": "90",
+    "reference_images": [
+      "/Users/brandonjones/Documents/Codex/2026-06-14/ok-so-i-want-to-have/work/github-pages-tokenification/cronk-tokenification-update/assets/images/generated/wedding-morning-gift-set.jpeg"
+    ]
+  },
+  "request_id": "req_ca90c172a80d4d84b7fd39254c77d1b1",
+  "saved_images": [
+    "/Users/brandonjones/Documents/Codex/2026-06-14/ok-so-i-want-to-have/work/github-pages-tokenification/cronk-tokenification-update/assets/images/generated/20260617-084242-edit-the-reference-wedding-morning-gift-set-product-photo-preser.jpeg"
+  ],
+  "image_sources": [
+    "base64"
+  ],
+  "response": {
+    "created": 1781700162,
+    "background": "opaque",
+    "data": [
+      {
+        "b64_json": "[base64 image data omitted]"
+      }
+    ],
+    "output_format": "jpeg",
+    "quality": "medium",
+    "size": "1024x1024",
+    "usage": {
+      "input_tokens": 1157,
+      "input_tokens_details": {
+        "image_tokens": 1024,
+        "text_tokens": 133
+      },
+      "output_tokens": 1756,
+      "output_tokens_details": {
+        "image_tokens": 1756,
+        "text_tokens": 0
+      },
+      "total_tokens": 2913
+    }
+  }
+}
